@@ -6,6 +6,7 @@ tags:
 
 Home page
 hi
-I like [[math]]
+I like [[Math]]
+I like [[OI Contests]]
 
-how does [[quartz]] work
+how does [[Quartz]] work
