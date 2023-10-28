@@ -35,6 +35,17 @@ https://quartz.jzhao.xyz/features/callouts
 > Critical content demanding immediate user attention due to potential risks.
 
 
+> [!QUESTION]
+> Aliases: question, help, faq
+
+> [!INFO]
+> Aliases: info, todo
+
+> [!EXAMPLE]
+> Aliases: example
+
+
+
 > **Note**
 > This is a note
 
