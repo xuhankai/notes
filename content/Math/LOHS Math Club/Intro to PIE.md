@@ -72,9 +72,24 @@ $$
 > > > We must **subtract** this from the total ways, which is 9! = 362880
 
 
+> [!QUESTION]
+> How many positive integers smaller or equal to 420 are relatively prime to 420?
+
+Sol 1: use Eulers Totient function( appeared on COMC)
+
+Sol2: use PIE 420 = 2^2 * 3 * 5 * 7
+rephrase problem: how many integers up to 420 are not divisible by 2,3,5, or 7.
 
 
 
+> [!QUESTION]
+> You are given 6 Letters, 9 O Letters, 4 S Letters, and 2 A Letters.
+> How many ways can you form a word using all letters that have at least 5 LO blocks( 5 instances where a L letter is followed by a O letter)
+> 
+
+Try 1: Messy casework
+
+Try 2: Use PIE.
 
 
 
