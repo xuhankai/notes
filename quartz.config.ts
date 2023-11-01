@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "nosaboy's Notes",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -31,13 +31,13 @@ const config: QuartzConfig = {
         },
         darkMode: {
           light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
+          lightgray: "#8817bd",
+          gray: "#7515ad",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          secondary: "#be0eeb",
+          tertiary: "#df0ceb",
+          highlight: "rgba(221, 25, 237, 0.8)",
         },
       },
     },
