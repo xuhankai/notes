@@ -30,6 +30,7 @@ Heres a diagram for visualizaton:
 > [!QUESTION]
 > 4 students from Oakland School of Arts, 3 students form Lake Ontario High School, and 2 students from Eastern Canada Academy are seated together in a row. Every student is **distinct**. If there are no instances where every student from the same school are all sit consectively next to each other( seated as a block), how many ways to seat the students?
 
+![[Drawing 2023-11-01 23.20.43.excalidraw]]
 We can use complementary counting. Count the number of seatings such that **at least 1** school has all of its students seated as a block. Then, we subtract this from the total number of ways to seat students.
 
 The total number of seatings is 9! since every student is distinct.
@@ -93,4 +94,16 @@ Try 2: Use PIE.
 
 
 
+
+Let S be the set {1, 2, 3, . . . , 10} Let n be the number of sets of
+two non-empty disjoint subsets of S. (Disjoint sets are defined as sets that have no
+common elements.) Find the remainder obtained when n is divided by 1000.
+Source: 2002 AIME
+
+
+The number of ways to set two disjoint subsets is 3^10 since we have 0 - belongs to no subset, 1 - belongs to subset A, 2 - belongs to subset B.
+
+This includes the cases where A is empty or B is empty or A and B are both empty. The number of ways where A is empty or B is empty is 2^n each since this is just the case where we only construct 1 subset, so we subtract this from our total to get 3^n - 2 * 2^n. 
+
+We have counted the case where both A and B are empty once in 3^n and once in each 2^n. So we have 1-(1+1) = -1 case where both sets are empty. Since we dont want to count any case where both sets are empty, we must add once the number of times where both sets are empty. This is 1, so n = (3^n - 2 * 2^n + 1)/2 since subsets are unordered( we counted A and B and vice versa).
 
