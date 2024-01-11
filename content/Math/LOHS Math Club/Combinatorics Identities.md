@@ -1,6 +1,6 @@
 ### Review
 From Intro to Combinatorics slides
-- Premute n items: n!
+- Permute n items: n!
 - Put n items in k slots where order matters: $\frac{n!}{(n-k)!}$
 - Put n items in k slots where order does not matter: $\binom{n}{k} = \frac{n!}{k!(n-k)!} = \binom{n}{n-k}$
 - Pascals Identity: $\binom{n}{k} + \binom{n}{k+1} = \binom{n+1}{k+1}$ for all $0 \le k \le n$
@@ -11,7 +11,7 @@ From Intro to Combinatorics slides
 We will generally use the following strategies:
 - Algebraic Manipulation
 - Using previous known identities to prove current identity
-- Using one to one correspondance(Ex: Committee forming) 
+- Using one to one correspondence(Ex: Committee forming) 
 How to prove is a matter of taste. We will provide 1 or a combination of strategies to prove our examples. We encourage you to try to prove it using other strategies.
 
 ### Basic Sum Identities
@@ -39,6 +39,7 @@ Now, we only want the ones with even numbers on the bottom. Note that for every 
 We want to calculate $\binom{n}{k}$ for all positive even $k$ such that $k \le n$.
 
 Algebraic Manipulation also seems kinda iffy 
+
 Turn back to the identities in our arsenal, what can we use?
 - Take the identity we just prove and multiply by -1: $(-1) \cdot (\binom{n}{0} - \binom{n}{1} + \cdots + \binom{n}{n}(-1)^n) = -\binom{n}{0} + \binom{n}{1} - \cdots + \binom{n}{n}(-1)^n(-1) = 0 \cdot -1 = 0.$
 - Here, we have alternating signs, where each $\binom{n}{k}$ with even $k$ is negative, and odd $k$ is positive.
@@ -53,7 +54,7 @@ Evaluate: $\sum_{k=0}^{11} k\binom{11}{k} = \binom{11}{1} + 2\binom{11}{2} + \cd
 
 The coefficients looks really bad to deal with because its changing, so we cant really use binomial theorem even though it looks similar.
 If only we have the same coefficients...
-- We can pair up expressions together. We know from our arsenal that $\binom{11}{k} = \binom{11}{11-k}.
+- We can pair up expressions together. We know from our arsenal that $\binom{11}{k} = \binom{11}{11-k}.$
 - Pair up $\left(\binom{11}{0}, \binom{11}{11}\right), \left(\binom{11}{1}, \binom{11}{10}\right), \left(\binom{11}{2}, \binom{11}{9}\right),\left(\binom{11}{3}, \binom{11}{8}\right),\left(\binom{11}{4}, \binom{11}{7}\right),\left(\binom{11}{5}, \binom{11}{6}\right).$ This way, we can reverse the coefficients and the sum will be the same since for every pair, $\binom{n}{k} = \binom{n}{n-k}$: $(0)\binom{11}{0} + \binom{11}{1} + 2\binom{11}{2} + \cdots + 11\binom{11}{11} = 11\binom{11}{0} + 10\binom{11}{1} + 9\binom{11}{2} + \cdots + (0)\binom{11}{11} = S.$
 - If we add these two together, we'll get the same coefficient for every $\binom{11}{k}:$ 
 $$\begin{aligned}2S &= \left((0)\binom{11}{0} + \binom{11}{1} + 2\binom{11}{2} + \cdots + 11\binom{11}{11}\right) \\ &+ \left(11\binom{11}{0} + 10\binom{11}{1} + 9\binom{11}{2} + \cdots + (0)\binom{11}{11}\right) \\ &= 11\binom{11}{0} + 11\binom{11}{1} + 11\binom{11}{2} + \cdots + 11\binom{11}{11} = 11(2^{11}).\end{aligned}.$$
