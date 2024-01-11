@@ -31,7 +31,7 @@ Compute: $\sum_{k=0}^{n} \binom{n}{k}(-1)^k = \binom{n}{0} - \binom{n}{1} + \cdo
 
 - Based on our previous sucess when the signs weren't alternating, we can try to manipulate the binomial theorem so it gives us alternating signs.
 - If we set x = 1 and y = -1, we have 
-	$\begin{aligned}(1-1)^n &= \binom{n}{0}(1)^n + \binom{n}{1}(1^{n-1})(-1) + \cdots + \binom{n}{n-1}(1)(-1)^{n-1} + \binom{n}{n}(-1)^n \\ &= \binom{n}{0} - \binom{n}{1} + \cdots + (-1)^n\binom{n}{n} \\ &= 0^n = 0. \end{aligned}$$
+	$$\begin{aligned}(1-1)^n &= \binom{n}{0}(1)^n + \binom{n}{1}(1^{n-1})(-1) + \cdots + \binom{n}{n-1}(1)(-1)^{n-1} + \binom{n}{n}(-1)^n \\ &= \binom{n}{0} - \binom{n}{1} + \cdots + (-1)^n\binom{n}{n} \\ &= 0^n = 0. \end{aligned}$$
 
 Compute: $\binom{n}{0} + \binom{n}{2} + \binom{n}{4} + \cdots$ for a positive n.
 
@@ -56,6 +56,6 @@ If only we have the same coefficients...
 - We can pair up expressions together. We know from our arsenal that $\binom{11}{k} = \binom{11}{11-k}.
 - Pair up $\left(\binom{11}{0}, \binom{11}{11}\right), \left(\binom{11}{1}, \binom{11}{10}\right), \left(\binom{11}{2}, \binom{11}{9}\right),\left(\binom{11}{3}, \binom{11}{8}\right),\left(\binom{11}{4}, \binom{11}{7}\right),\left(\binom{11}{5}, \binom{11}{6}\right).$ This way, we can reverse the coefficients and the sum will be the same since for every pair, $\binom{n}{k} = \binom{n}{n-k}$: $(0)\binom{11}{0} + \binom{11}{1} + 2\binom{11}{2} + \cdots + 11\binom{11}{11} = 11\binom{11}{0} + 10\binom{11}{1} + 9\binom{11}{2} + \cdots + (0)\binom{11}{11} = S.$
 - If we add these two together, we'll get the same coefficient for every $\binom{11}{k}:$ 
-$$\begin{aligned}2S &= \left((0)\binom{11}{0} + \binom{11}{1} + 2\binom{11}{2} + \cdots + 11\binom{11}{11}\right) + \left(11\binom{11}{0} + 10\binom{11}{1} + 9\binom{11}{2} + \cdots + (0)\binom{11}{11}\right) \\ &= 11\binom{11}{0} + 11\binom{11}{1} + 11\binom{11}{2} + \cdots + 11\binom{11}{11} = 11(2^{11}).\end{aligned}.$$
+$$\begin{aligned}2S &= \left((0)\binom{11}{0} + \binom{11}{1} + 2\binom{11}{2} + \cdots + 11\binom{11}{11}\right) \\ &+ \left(11\binom{11}{0} + 10\binom{11}{1} + 9\binom{11}{2} + \cdots + (0)\binom{11}{11}\right) \\ &= 11\binom{11}{0} + 11\binom{11}{1} + 11\binom{11}{2} + \cdots + 11\binom{11}{11} = 11(2^{11}).\end{aligned}.$$
 - Here, we put everything in same coefficient, then used binomial theorem to get $\binom{11}{1} + \binom{11}{2} + \cdots + 11\binom{11}{11} = 2^{11}.$
 Therefore, $S = 11 \cdot 2^{10} = 11264.$

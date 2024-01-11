@@ -53,5 +53,10 @@ https://quartz.jzhao.xyz/features/callouts
 ### Publish
 https://quartz.jzhao.xyz/hosting
 Type cd quatz in cmd prompt
+
 **Save changes on github:** npx quartz sync
+
 **Upload on website:** npx quartz build
+
+### Math
+KaTeX does not support "align" ==use "aligned" instead==
