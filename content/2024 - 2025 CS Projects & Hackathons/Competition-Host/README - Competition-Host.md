@@ -1,0 +1,1 @@
+A lightweight platform to host competitions for clubs and organizations.

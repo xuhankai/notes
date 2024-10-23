@@ -1,0 +1,1 @@
+Spotify with no ads, playlists, and friend activities. Possibly add api to connect with spotify for free downloads.
