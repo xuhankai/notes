@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { Staticrypt } from "./quartz/password"
 
 const config: QuartzConfig = {
   configuration: {
@@ -44,6 +45,7 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
+      Staticrypt(),
       Plugin.FrontMatter(),
       Plugin.TableOfContents(),
       Plugin.CreatedModifiedDate({
