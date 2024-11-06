@@ -9,7 +9,7 @@ import { Staticrypt } from "./quartz/password"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Kevin's Journal",
+    pageTitle: "Notes📓",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
