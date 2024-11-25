@@ -1,1 +1,1 @@
-Its like a link i guess
+Its like a link i guess lol
