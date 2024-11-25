@@ -25,7 +25,7 @@ const imageStyle: React.CSSProperties = {
 };
 
 export default (() => {
-  const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, profileImage }) => {
+  const Profile: React.FC<ProfileCardProps> = ({ name, bio, profileImage }) => {
     return (
       <div style={cardStyle}>
         <img
@@ -39,6 +39,5 @@ export default (() => {
     );
   }
  
-  YourComponent.css = styles
-  return YourComponent
+
 }) satisfies QuartzComponentConstructor
