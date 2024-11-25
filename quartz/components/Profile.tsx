@@ -1,5 +1,5 @@
 import React from "react";
-
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 interface ProfileCardProps {
   name: "Kevin Xu";
   bio: string;
