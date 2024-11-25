@@ -42,9 +42,9 @@ const Profile: React.FC = () => {
   return (
     <div>
       <ProfileCard
-        name="John Doe"
-        bio="Software Developer at Tech Corp. Passionate about coding and coffee."
-        profileImage="https://via.placeholder.com/100"
+        name="Kevin Xu"
+        bio="CS @  , Webdev, Competitive Programming"
+        profileImage="https://i.pinimg.com/736x/61/24/f2/6124f203430984848ac82f117684d8e1.jpg"
       />
     </div>
   );
