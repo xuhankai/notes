@@ -35,6 +35,7 @@ export {
   TableOfContents,
   Explorer,
   TagList,
+  Profile,
   Graph,
   Backlinks,
   Search,
