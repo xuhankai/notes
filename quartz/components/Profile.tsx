@@ -1,11 +1,10 @@
 import React from "react";
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 interface ProfileCardProps {
-  name: "Kevin Xu";
+  name: string;
   bio: string;
-  profileImage: "https://i.pinimg.com/736x/61/24/f2/6124f203430984848ac82f117684d8e1.jpg";
+  profileImage: string;
 }
-
 
 const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, profileImage }) => {
   return (
@@ -39,4 +38,15 @@ const imageStyle: React.CSSProperties = {
   marginBottom: "12px",
 };
 
-export default (() => ProfileCard) satisfies QuartzComponentConstructor
+const Profile: React.FC = () => {
+  return (
+    <div>
+      <ProfileCard
+        name="John Doe"
+        bio="Software Developer at Tech Corp. Passionate about coding and coffee."
+        profileImage="https://via.placeholder.com/100"
+      />
+    </div>
+  );
+};
+export default (() => Profile) satisfies QuartzComponentConstructor
