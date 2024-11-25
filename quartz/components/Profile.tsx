@@ -6,6 +6,21 @@ interface ProfileCardProps {
   profileImage: "https://i.pinimg.com/736x/61/24/f2/6124f203430984848ac82f117684d8e1.jpg";
 }
 
+
+const ProfileCard: React.FC<ProfileCardProps> = ({ name, bio, profileImage }) => {
+  return (
+    <div style={cardStyle}>
+      <img
+        src={profileImage}
+        alt={`${name}'s profile`}
+        style={imageStyle}
+      />
+      <h2>{name}</h2>
+      <p>{bio}</p>
+    </div>
+  );
+};
+
 const cardStyle: React.CSSProperties = {
   border: "1px solid #ccc",
   borderRadius: "8px",
@@ -24,20 +39,4 @@ const imageStyle: React.CSSProperties = {
   marginBottom: "12px",
 };
 
-export default (() => {
-  const Profile: React.FC<ProfileCardProps> = ({ name, bio, profileImage }) => {
-    return (
-      <div style={cardStyle}>
-        <img
-          src={profileImage}
-          alt={`${name}'s profile`}
-          style={imageStyle}
-        />
-        <h2>{name}</h2>
-        <p>{bio}</p>
-      </div>
-    );
-  }
- 
-
-}) satisfies QuartzComponentConstructor
+export default (() => ProfileCard) satisfies QuartzComponentConstructor
