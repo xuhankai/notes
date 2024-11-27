@@ -88,7 +88,9 @@ For **directed lengths**, given collinear points $A,Z,B$, $\frac{AZ}{ZB}$ is pos
 
 First, suppose points $X,Y,Z$ lie on sides of triangle in such a way that $\frac{BX}{XC} \cdot \frac{CY}{YA} \cdot \frac{AZ}{ZB} = -1$. Then, there must exist real numbers $p,q,r,$ such that $\frac{q}{r} = -\frac{BX}{XC}, \frac{r}{p} = -\frac{CY}{YA}, \frac{p}{q} = -\frac{AZ}{ZB}$. 
 Now we view this in 3D. Let $P$ be the plane triangle $ABC$ lies on in a 3D space. We construct $A_1$ such that $A_1A \perp P$ and $AA_1= |p|$. Then, we put $A_1$ above the plane $P$ if $p>0$ in our equations, and below the page if $p<0$. We define $B_1$ and $C_1$ similarly, so $BB_1 = |q|$ and $CC_1 = |r|$.
+
 ![[Pasted image 20241122202600.png]]
+
 Since $\frac{BX}{XC} = \frac{|q|}{|r|} = \frac{BB_1}{CC_1}$ (disregard negative as it only denotes direction), by HL similarity for right triangles $\triangle B_1BX \sim \triangle C_1CX$, so $\angle B_1XB = \angle C_1XC$. Moreover, since $B,X,C$ are collinear and $B_1$ and $C_1$ are both on the plane of $B,X,C$, it must mean that $B_1,C_1,X$ are collinear. Similarly, $A_1,C_1,Y$ are collinear and $B_1,A_1,Z$ are collinear. 
 Consider the plane $Q$ containing triangle $A_1B_1C_1$. Note that the intersection of two planes in 3D space (considering they are not parallel, like in this case) must be a line. Since $X,Y,Z$ is a point on both plane, they are on it intersection, which means they are all on some line. Thus,
 $X,Y,Z$ are collinear.
@@ -107,7 +109,9 @@ Note in this case, either exactly one or three of $X,Y,Z$ lie strictly inside si
 ### 3.4 The Centroid and the Medial Triangle
 
 Since $BM = MC$, we have $1 = \frac{BM}{MC} = \frac{[GMB]}{[GMC]}$. Thus, we let $x = [GMB] = [GMC]$ and define $y$ and $z$ similarly as shown.
+
 ![[Pasted image 20241122213457.png]]
+
 By similar logic, $1 = \frac{BM}{MC} = \frac{[AMB]}{[AMC]} = \frac{x+2z}{x+2y}$, which means $y=z$. Similarly, we can show $x=y$ and $x = z$. Thus, the six areas of the triangle divided by the medians are all equal.
 
 **Lemma 3.9 (Centroid Division): The centroid of a triangle divides the median into a $2:1$ ratio.**
@@ -116,9 +120,13 @@ By above, we have $\frac{AG}{GM} = \frac{[AGB]}{[MGB]} = \frac{2z}{x} = 2$.
 ### 3.5 Homothety and the Nine-Point Circle
 
 **Homothety** or **dilation** is when we dilate a figure from some center to create another figure similar to it. 
+
 ![[Pasted image 20241122220029.png]]
+
 Formally, a homothety $h$ is a transformation defined by center $O$ and a real number $k$. It sends a point $P$ of the figure to another point $h(P)$, multiplying the distance from $O$ to $P$ by $k$. The number $k$ is thus called the **scale factor**. Note that $k$ can be negative, in which case we have a **negative homothety**. 
+
 ![[Pasted image 20241122220223.png]]
+
 Thus, this is just a special case of similar triangle. Homothety preserves many things such as tangency, angles (both directed and non-directed), circles, etc. They do not preserve length (similarity), though homothety length is just scaled by $k$.  
 Note that for two non congruent (different) parallel lines $AB$ and $XY$, we label the intersection point of lines $AX$ and $BY$ as $O$, then $O$ is the center of a homothety sending one segment to the other. Thus, parallel lines often indicate homothety. We can carry this idea to the following lemma.
 
