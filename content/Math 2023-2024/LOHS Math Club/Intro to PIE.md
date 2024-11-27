@@ -30,7 +30,7 @@ Heres a diagram for visualizaton:
 > [!QUESTION]
 > 4 students from Oakland School of Arts, 3 students form Lake Ontario High School, and 2 students from Eastern Canada Academy are seated together in a row. Every student is **distinct**. If there are no instances where every student from the same school are all sit consectively next to each other( seated as a block), how many ways to seat the students?
 
-![[Drawing 2023-11-01 23.20.43.excalidraw]]
+![[Drawing 2023-11-01 23.20.43.excalidraw 1]]
 We can use complementary counting. Count the number of seatings such that **at least 1** school has all of its students seated as a block. Then, we subtract this from the total number of ways to seat students.
 
 The total number of seatings is 9! since every student is distinct.
