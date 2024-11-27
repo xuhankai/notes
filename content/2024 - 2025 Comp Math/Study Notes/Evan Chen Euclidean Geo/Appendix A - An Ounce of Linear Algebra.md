@@ -145,7 +145,7 @@ $$
 Similarly, $\vec{B} \cdot \vec{C} = R^2 - \frac{1}{2}a^2$ and $\vec{C} \cdot \vec{A} = R^2 - \frac{1}{2}b^2$. In ==Chapter 6== #todo, let $H$ be the orthocenter, then $\vec{H} = \vec{A} + \vec{B} + \vec{C}$. By this, we can compute $OH$ through dot product:
 $$
 \begin{align}
-OH^2 = |\overrightarrow{OH}|^2 &= |\vec{H}|^2 \\
+OH^2 &= |\overrightarrow{OH}|^2 = |\vec{H}|^2 \\
 &= \vec{H}\cdot\vec{H}\\
 &= (\vec{A} + \vec{B} + \vec{C}) \cdot (\vec{A} + \vec{B} + \vec{C}) \\
 &= \vec{A} \cdot \vec{A} + \vec{B} \cdot \vec{B} + \vec{C} \cdot \vec{C} + 2(\vec{A}\cdot\vec{B}+\vec{B}\cdot\vec{C}+\vec{A}\cdot\vec{C}) \\
