@@ -296,9 +296,10 @@ By this similarity, $\frac{MB}{MK} = \frac{MT}{MB}, MB^2 = MK \cdot MT$.
 **Lemma 4.33 (Circles Inscribed in Segments): Let $AB$ be chord of circle $O_1$. Let $O_2$ be the circle tangent to both AB at K and $O_1$ internally at $T$. Then, ray $TK$ passes through midpoint $M$( of the arc $\widehat{AB}$ not containing $T$).**
 
 Moreover, we can define the power of $M$ with respect to $O_1$ as $MA^2 = MB^2$. 
-Let $C$ be another point on the arc $\widehat{AB}$ (that contains $T$). Let $D$ be on $AB$ such that $CD$ is tangent to $O_2$ at $L$. 
 
-![[Pasted image 20241013183147.png]]
+
+Let $C$ be another point on the arc $\widehat{AB}$ that contains $T$. Let $D$ be on $AB$ such that $CD$ is tangent to $O_2$ at $L$. 
+	![[Pasted image 20241013183147.png]]
 
 Then, the circle $O_2$ is called a **curvilinear incircle** of $ABC$. As $D$ can move along $AB$, we obtain many curvilinear incircles, hence we say "a" curvilinear incircle. We claim that if $I$ is the intersection of $CM$ and $KL$, then $I$ is the incenter of $\triangle ABC$.
 
