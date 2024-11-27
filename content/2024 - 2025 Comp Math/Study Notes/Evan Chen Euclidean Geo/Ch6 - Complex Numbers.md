@@ -1,69 +1,12 @@
-### 6.1 Definitions
+### 6.1 Definition
 A **complex number** is a number in the form of $z = a+bi$ where $a$ and $b$ are real numbers and $i = \sqrt{-1}$. The real part is denoted as $a = Re(z)$. 
-**Every** complex number can be expressed in **polar form** as 
+Every complex number can be expressed in **polar form** as 
 $$
 z = r(\cos{\theta}+i\sin{\theta}) = re^{i\theta}
 $$
-for some nonnegative real $r$ (by **Euler's formula** which states $e^{i\theta} = \cos{\theta}+i\sin{\theta}$). Thus, **every** complex number can be plotted on the complex plane as point $(a,b)$.
-
-![[Pasted image 20241123110209.png]]
-The **magnitude** of $z = a+bi = re^{i\theta}$, denoted as $|z|$ is equal to 
-$$
-|z| = r = \sqrt{a^2+b^2}.
-$$
-The angle in radius $\theta$ is the **argument** of $z$, denoted as $\arg{z}$. We use $\theta \pmod{360^{\circ}}$ as that is the period of $\sin$ and $\cos$ functions, so $30^{\circ} \equiv 390^{\circ} \pmod{360^{\circ}}$ makes no difference in calculations.
-The **complex conjugate** of $z$ is the number
-$$
-\overline{z} = a-bi = re^{-i\theta}.
-$$
-It is the reflection of $z$ over the real (x) axis. For complex numbers $w$ and $z$, the following properties hold:
-$$
-\begin{align}
-\overline{w+z} &= \overline{w} + \overline{z}, \\
-\overline{w-z} &= \overline{w} - \overline{z}, \\
-\overline{w\cdot z} &= \overline{w} \cdot \overline{z}, \\
-\overline{w\div z} &= \overline{w} \div \overline{z},
-\end{align}
-$$
-so essentially just we can separate conjugates. Thus, we may use these rules to write things like $\overline{\left(\frac{z-a}{b-a}\right)} = \frac{\overline{z} - \overline{a}}{\overline{b} - \overline{a}}$. Also 
-$$
-|z|^2 = z\overline{z}
-$$
-since $a^2+b^2 = (a+bi)(a-bi) = a^2 - (-b^2)$. 
-
-For this chapter, We denote a point on the complex plane with an upper case letter (For ex: $A$) that corresponds to the complex number denoted by the corresponding lowercase letter (For ex: $a$). 
-
-### 6.2 Adding and Multiplying Complex Numbers
-Complex number can be viewed as vectors $(u,v)$ as the corresponding complex number is $u+vi$. Thus, properties of vector addition (Appendix A.3) can also be applied to complex numbers. Thus, the following are true for complex numbers:
-- The midpoint $M$ of $AB$ is $m = \frac{1}{2}(a+b)$.
-- Three points $A,B,C$ are collinear if and only if $c = \lambda a + (1-\lambda)b$ for some real number $\lambda$. 
-- Centroid $G$ of triangle $ABC$ is $g = \frac{1}{3}(a+b+c)$. 
-- Quadrilateral $ABCD$ is a parallelogram if and only if $a+c = b+d$.
-Similar to vectors, adding complex numbers corresponds to translation.
-Complex numbers can also be multiplied. If $z_1 = r_1e^{i\theta_1}$ and $z_2 = r_2e^{i \theta_2}$, then $z_1z_2 = r_1r_2e^{i(\theta_1 + \theta_2)}$. Thus,
-$$
-|z_1z_2| = |z_1||z_2|, \arg{z_1}+\arg{z_2}, \textnormal{ for all }z_1,z_2 \in \mathbb{C}.
-$$
-Note that since we are taking $\arg{z}$ mod $360^{\circ}$, $\arg{z_1z_2} \equiv \arg{z_1}+\arg{z_2} \pmod{360^{\circ}}$. 
-
-**Example 6.1: Multiplying a complex number $z$ by $i$ is equivalent t rotating by $90^{\circ}$ counterclockwise around the origin.**
-We have $i = 0 + i\sin{\theta}, \sin{\theta} = 1, \arg{i} = \theta = \frac{\pi}{2} = 90^{\circ}$. Let $z_2 = i = e^{90^{\circ}i}$. We have $z_1z_2 = r_1e^{i(\theta_1+90^{\circ})}$ which is just the original scale factor of $z_1$, but $90^{\circ}$ is added to the angle meaning it rotated $90^{\circ}$ counterclockwise.
-Moreover, we can also think about multiplying $i$ as just going from $a+bi$ to $-b,ai$, so from point $(a,b)$ to $(-b,a)$ on the complex plane.
-![[Pasted image 20241123220051.png]]
-
-If we want to rotate a point $90^{\circ}$ counterclockwise about some other point $w$, we must translate the original diagram so that $w \rightarrow 0$, apply the $90^{\circ}$ rotation by multiplying $i$, then translation the whole thing back. To apply translation $w\rightarrow 0$, the new coordinates for $z$ is $(a_z-a_w,b_z-b_w)$ which corresponds to $z-w$. Similarily, translating back is $z+w$. Thus, the point after rotating $z$ about $w$ by $90^{\circ}$ counterclockwise is
-$$
-z \rightarrow (z-w)i + w.
-$$
-We can then generalize for any complex (non-zero) number as the degree. For any complex number $w$ and non-zero $\alpha$, the mapping
-$$
-z \rightarrow \alpha(z-w)+w
-$$
-is a **spiral similarity** that rotates $z$ by $\arg{a}$ and dilates by $|\alpha|$. 
+for some nonnegative real $r$ (by **Euler's formula** which states $e^{i\theta} = \cos{\theta}+i\sin{\theta}$). Thus, every complex number can be plotted on the complex plane as point $(a,b)$.
+![[Pasted image 20241015150228.png]]
 
 
 
-**Lemma 6.2 (Complex Reflection): Let $W$ be the reflection of $Z$ over line $AB$. Then,
-$$
-w = \frac{(a-b)\overline{z} + \overline{a}b - a\overline{b}}{\overline{a}-\overline{b}}.
-$$
+
