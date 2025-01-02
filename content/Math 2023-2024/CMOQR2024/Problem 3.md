@@ -1,5 +1,5 @@
 Let $D$ be the intersection between the altitude from $B$ to $AC$. Let $E$ be the foot of the altitude from $M$ to $BC$. Let $F$ be the foot of the altitude from $A$ to $BC$. Let $G$ be the foot of the altitude form $M$ to $AB$, as shown in the diagram. We are given $ME = 6$ and $MG = 1$.
-![[Drawing 2024-02-04 23.48.25.excalidraw 1]]
+![[Drawing 2024-02-04 23.48.25.excalidraw]]
 
 Since $B,H,M$ are collinear,
 $$

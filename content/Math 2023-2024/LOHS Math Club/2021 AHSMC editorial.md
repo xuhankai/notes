@@ -14,7 +14,7 @@ The area of the shaded region is Area of square - Area of right 3 - 4 - 5 triang
 Problem 3: Lets try to find forced squares. We note that if a sqaure is beside 2 adjancent squares that have different values, it must be the third value. We can now find value and start 
 filling them out. Filling the first value creates a chain reaction for another value. Note that the middle is beside 2 filled sqaures with different values 1 and 2, so we put down 3.
 
-![[Drawing 2023-11-15 23.13.46.excalidraw 1]]
+![[Drawing 2023-11-15 23.13.46.excalidraw]]
 
 
 ![[Pasted image 20231115232704.png]]
@@ -60,7 +60,7 @@ To get to 230, we used all chunks from 1 to 10. The number of moves is the lengt
 ![[Pasted image 20231116000348.png]]
 
 Problem 8: The original surface area before the cutting was $2(3 * 4 + 3* 5 + 4 * 5) = 2(47) = 94.$ After the cut, we still have the original surface plus some additional surface area. This additional surface area will be 2 * the face of the cut. Thus, we only need to maximize the area of the face that has been cut. 
-![[Drawing 2023-11-16 00.07.08.excalidraw 1]]
+![[Drawing 2023-11-16 00.07.08.excalidraw]]
 To do this, we must find the maximum base and height that can be cut in a straight line. This maximum value will be a cut of a diagonal. The area of one side is $\sqrt{a^2 + b^2} \cdot c.$ So its either 
 $\sqrt{3^2 + 4^2}\cdot5 = 25$, $\sqrt{3^2 + 5^2}\cdot4 = 4\sqrt{34}$, or $\sqrt{4^2 + 5^2}\cdot3 = 3\sqrt{41}$. We note that $\sqrt{34} < 6$ so $4\sqrt{34} < 24.$ Moreover, $\sqrt{41} < 7,$ so $3\sqrt{41} < 21.$ Thus, 25 is the biggest. Multiplying this area by 2 and adding it to 94, we get 50 + 94 = 144.
 
