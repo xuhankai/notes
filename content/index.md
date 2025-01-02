@@ -6,14 +6,13 @@ tags:
 My name is Kevin and I like serotonin <3 I try to be more optimistic everyday!
 
 Links
-
-github: https://github.com/XuHanKai
-linkedin: https://www.linkedin.com/in/XuHanKai
 email: xhkkevin@gmail.com
-youtube: https://youtube.com/XuHanKai
-twitter: 
-reddit: https://www.reddit.com/user/XuHanKai
-clist: https://clist.by/coder/KevinXu/
-discord: 
-instagram:
-vsco: https://vsco.co/XuHanKai/gallery
+github: [XuHankai](https://github.com/XuHanKai)
+linkedin: [XuHanKai](https://www.linkedin.com/in/XuHanKai)
+youtube: [XuHanKai](https://youtube.com/XuHanKai)
+twitter: [XHKkevin](https://x.com/XHKkevin)
+reddit: [XuHanKai](https://www.reddit.com/user/XuHanKai)
+clist: [XuHanKai](https://clist.by/coder/XuHanKai)
+discord: [XuHanKai](https://discord.com/users/1324252332539641916) 
+instagram: [XHKkevin](https://www.instagram.com/XHKkevin)
+vsco: [XuHanKai](https://vsco.co/XuHanKai/gallery)
