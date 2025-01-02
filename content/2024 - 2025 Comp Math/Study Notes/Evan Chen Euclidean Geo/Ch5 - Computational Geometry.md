@@ -26,6 +26,8 @@ $$
 \frac{|Ax_1+By_1+C|}{\sqrt{A^2+B^2}}.
 $$
 
+A shortcoming of cartesian coordinates is that some formulas may not be symmetric, meaning the points you pick are important. For example, applying an analytic geometry formula to a point vs another point on a triangle may output a different result.
+
 Problems where using coordinates are effective will have these characteristics:
 - The problem features a prominent right angle, which can be the origin.
 - The problem involves intersections or perpendiculars.
