@@ -1,1 +1,0 @@
-Simple image compression model using unsupervised learning. Capstone 1 of M2M Tech Summer Program.
