@@ -1,1 +1,0 @@
-Model for determining most optimal move in nim-like games. Scapped Capstone 2 for M2M summer. Possibly used for Nim Competitions and other games later on.
